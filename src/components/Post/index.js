@@ -9,7 +9,11 @@ const Post = ({post}) => {
     <View>
       <Header imageUri={post.user.imageUri} name={post.user.name} />
       <Body imageUri={post.subImage} />
-      <Footer />
+      <Footer
+        LikesCount={post.LikesCount}
+        caption={post.caption}
+        postedAt={post.postedAt}
+      />
     </View>
   );
 };
