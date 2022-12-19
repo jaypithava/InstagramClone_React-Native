@@ -5,10 +5,10 @@ import Feed from '../../components/Feed';
 
 const HomeScreen = () => {
   return (
-    <View>
+    <SafeAreaView>
       {/* <Text style={styles.mainText}>Instagram</Text> */}
       <Feed />
-    </View>
+    </SafeAreaView>
   );
 };
 const styles = StyleSheet.create({

@@ -5,6 +5,7 @@ import Stories from '../../components/Stories';
 
 const data = [
   {
+    id: '1',
     user: {
       imageUri: 'https://cdn-icons-png.flaticon.com/512/4140/4140048.png',
       name: 'Hard',
@@ -16,6 +17,7 @@ const data = [
     postedAt: '6 minutes ago',
   },
   {
+    id: '2',
     user: {
       imageUri: 'https://cdn-icons-png.flaticon.com/512/2922/2922506.png',
       name: 'Yash',
@@ -27,6 +29,7 @@ const data = [
     postedAt: '16 minutes ago',
   },
   {
+    id: '3',
     user: {
       imageUri: 'https://cdn-icons-png.flaticon.com/512/4140/4140037.png',
       name: 'Hardik',
@@ -38,6 +41,7 @@ const data = [
     postedAt: '26 minutes ago',
   },
   {
+    id: '4',
     user: {
       imageUri: 'https://cdn-icons-png.flaticon.com/512/4140/4140037.png',
       name: 'Hardik',
@@ -49,6 +53,7 @@ const data = [
     postedAt: '26 minutes ago',
   },
   {
+    id: '5',
     user: {
       imageUri: 'https://cdn-icons-png.flaticon.com/512/4140/4140048.png',
       name: 'Hard',
@@ -60,6 +65,7 @@ const data = [
     postedAt: '6 minutes ago',
   },
   {
+    id: '6',
     user: {
       imageUri: 'https://cdn-icons-png.flaticon.com/512/2922/2922506.png',
       name: 'Yash',
@@ -71,6 +77,7 @@ const data = [
     postedAt: '16 minutes ago',
   },
   {
+    id: '7',
     user: {
       imageUri: 'https://cdn-icons-png.flaticon.com/512/4140/4140037.png',
       name: 'Hardik',
@@ -82,6 +89,7 @@ const data = [
     postedAt: '26 minutes ago',
   },
   {
+    id: '8',
     user: {
       imageUri: 'https://cdn-icons-png.flaticon.com/512/4140/4140048.png',
       name: 'Hard',
@@ -93,6 +101,7 @@ const data = [
     postedAt: '6 minutes ago',
   },
   {
+    id: '9',
     user: {
       imageUri: 'https://cdn-icons-png.flaticon.com/512/2922/2922506.png',
       name: 'Yash',
@@ -104,6 +113,7 @@ const data = [
     postedAt: '16 minutes ago',
   },
   {
+    id: '10',
     user: {
       imageUri: 'https://cdn-icons-png.flaticon.com/512/4140/4140037.png',
       name: 'Hardik',
@@ -121,6 +131,7 @@ const Feed = () => {
     <FlatList
       ListHeaderComponent={Stories}
       data={data}
+      keyExtractor={({id}) => id}
       renderItem={({item}) => <Post post={item} />}
     />
   );
