@@ -14,7 +14,7 @@ import Adicon from 'react-native-vector-icons/AntDesign';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import Fontisto from 'react-native-vector-icons/Fontisto';
 
-import logo from './src/assets/images/logo.png';
+import instagramLogo from './src/assets/images/logo.png';
 
 const Tab = createBottomTabNavigator();
 
@@ -34,6 +34,14 @@ function HomeStackScreen() {
               <Feather name="camera" size={25} color="#000000" />
             </View>
           ),
+          headerTitle: () => (
+            <Image
+              source={instagramLogo}
+              resizeMode="cover"
+              style={{width: 135, height: 42}}
+            />
+          ),
+
           headerRight: () => (
             <View style={{flexDirection: 'row'}}>
               <View style={{marginRight: 15}}>
