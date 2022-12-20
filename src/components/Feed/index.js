@@ -1,7 +1,7 @@
 import {FlatList} from 'react-native';
 import React from 'react';
 import Post from '../Post';
-import Stories from '../../components/Stories';
+import Stories from '../UserStoriesPreview';
 
 const data = [
   {
