@@ -30,8 +30,8 @@ export default [
     },
     stories: [
       {
-        imageUri: 'https://cdn-icons-png.flaticon.com/512/4140/4140048.png',
-        postedTime: '25 m',
+        imageUri: 'https://images.unsplash.com/photo-1671400833073-0a066e059f44?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80',
+        postedTime: '10 m',
       },
       {
         imageUri:
@@ -40,7 +40,7 @@ export default [
       },
       {
         imageUri: 'https://cdn-icons-png.flaticon.com/512/4140/4140048.png',
-        postedTime: '25 m',
+        postedTime: '15 m',
       },
     ],
   },
@@ -53,15 +53,15 @@ export default [
     stories: [
       {
         imageUri: 'https://cdn-icons-png.flaticon.com/512/4140/4140048.png',
+        postedTime: '2 m',
+      },
+      {
+        imageUri: 'https://images.unsplash.com/photo-1671400833073-0a066e059f44?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80',
         postedTime: '25 m',
       },
       {
         imageUri: 'https://cdn-icons-png.flaticon.com/512/4140/4140048.png',
-        postedTime: '25 m',
-      },
-      {
-        imageUri: 'https://cdn-icons-png.flaticon.com/512/4140/4140048.png',
-        postedTime: '25 m',
+        postedTime: '5 m',
       },
     ],
   },
@@ -73,7 +73,7 @@ export default [
     },
     stories: [
       {
-        imageUri: 'https://cdn-icons-png.flaticon.com/512/4140/4140048.png',
+        imageUri: 'https://images.unsplash.com/photo-1671400833073-0a066e059f44?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80',
         postedTime: '25 m',
       },
       {
@@ -81,7 +81,7 @@ export default [
         postedTime: '25 m',
       },
       {
-        imageUri: 'https://cdn-icons-png.flaticon.com/512/4140/4140048.png',
+        imageUri: 'https://images.unsplash.com/photo-1671400833073-0a066e059f44?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80',
         postedTime: '25 m',
       },
     ],
