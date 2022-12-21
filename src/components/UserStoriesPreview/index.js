@@ -1,70 +1,18 @@
-import {View, Text, FlatList} from 'react-native';
+import {FlatList} from 'react-native';
 import React from 'react';
 import Story from '../UserStoryPreview';
 import styles from './styles';
-
-const data = [
-  {
-    imageUri: 'https://cdn-icons-png.flaticon.com/512/4140/4140048.png',
-    name: 'Hard',
-  },
-  {
-    imageUri: 'https://cdn-icons-png.flaticon.com/512/2922/2922506.png',
-    name: 'Mandip',
-  },
-  {
-    imageUri: 'https://cdn-icons-png.flaticon.com/512/4140/4140051.png',
-    name: 'Mit',
-  },
-  {
-    imageUri: 'https://cdn-icons-png.flaticon.com/512/4140/4140037.png',
-    name: 'Ahmad Bhai',
-  },
-  {
-    imageUri: 'https://cdn-icons-png.flaticon.com/512/4140/4140048.png',
-    name: 'jay',
-  },
-  {
-    imageUri: 'https://cdn-icons-png.flaticon.com/512/2922/2922506.png',
-    name: 'yash',
-  },
-  {
-    imageUri: 'https://cdn-icons-png.flaticon.com/512/4140/4140051.png',
-    name: 'tofik',
-  },
-  {
-    imageUri: 'https://cdn-icons-png.flaticon.com/512/4140/4140037.png',
-    name: 'hardik',
-  },
-  {
-    imageUri: 'https://cdn-icons-png.flaticon.com/512/4140/4140048.png',
-    name: 'dharmil',
-  },
-  {
-    imageUri: 'https://cdn-icons-png.flaticon.com/512/2922/2922506.png',
-    name: 'jacob',
-  },
-  {
-    imageUri: 'https://cdn-icons-png.flaticon.com/512/4140/4140051.png',
-    name: 'motabhai',
-  },
-  {
-    imageUri: 'https://cdn-icons-png.flaticon.com/512/4140/4140037.png',
-    name: 'lal Bhai',
-  },
-];
+import storiesData from '../../data/stories';
 
 const Stories = () => {
   return (
     <FlatList
-      data={data}
-      keyExtractor={({name}) => name}
+      data={storiesData}
+      keyExtractor={({user: {id}}) => id}
       horizontal
       style={styles.container}
       showsHorizontalScrollIndicator={false}
-      renderItem={({item}) => (
-        <Story imageUri={item.imageUri} name={item.name} />
-      )}
+      renderItem={({item}) => <Story story={item} />}
     />
     //   <Story imageUri={data[0].imageUri} name={data[0].name} />
     //   <Story imageUri={data[1].imageUri} name={data[1].name} />
